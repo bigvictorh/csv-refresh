@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Processor</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <h1>File Processor</h1>
+        <div class="input-group">
+            <label for="districtId">Enter District ID:</label>
+            <input type="text" id="districtId" name="districtId" placeholder="Enter ID">
+        </div>
+        <div class="button-group">
+            <button id="navigateToPage" disabled>Go to SFTP Page</button>
+            <button id="navigateToInfo" disabled>Go to Info Page</button>
+        </div>
+        <button id="refreshSFTP" class="full-width" style="display: none;">Refresh SFTP</button>
+        <button id="closePopup" class="full-width">Close</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

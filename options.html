@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Options</title>
+    <link rel="stylesheet" href="styles/options.css">
+</head>
+<body>
+    <div class="options-container">
+        <h1>Extension Settings</h1>
+
+        <form id="optionsForm">
+            <div class="form-group">
+                <label for="filenamePrefix">Filename Prefix:</label>
+                <input type="text" id="filenamePrefix" name="filenamePrefix">
+            </div>
+
+            <div class="form-group">
+                <label for="sftpServer">SFTP Server:</label>
+                <input type="text" id="sftpServer" name="sftpServer" placeholder="e.g., sftp.example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <button type="submit">Save Settings</button>
+        </form>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

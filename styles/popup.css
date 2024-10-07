@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px; /* Set the width of the popup */
+    padding: 20px;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.popup-container {
+    text-align: left; /* Left-align all content */
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.input-group, .button-group, .full-width {
+    margin-bottom: 15px; /* Even space between elements */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%; /* Full width for each button */
+    text-align: left; /* Left-align button text */
+}
+
+button.full-width {
+    width: 100%;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}

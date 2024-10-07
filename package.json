@@ -1,0 +1,12 @@
+{
+  "name": "sftp-server",
+  "version": "1.0.0",
+  "description": "Server-side component for handling SFTP uploads.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "ssh2-sftp-client": "^7.0.0"
+  }
+}

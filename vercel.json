@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/sftp/upload.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/sftp/upload",
+        "dest": "/api/sftp/upload.js"
+      }
+    ]
+  }
+  

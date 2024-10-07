@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Monitor Extension</title>
+    <link rel="stylesheet" href="styles/window.css">
+</head>
+<body>
+    <div class="window-container">
+        <h1>CSV Refresh</h1>
+        <div class="input-group">
+            <label for="districtId">Enter District ID:</label>
+            <input type="text" id="districtId" name="districtId" placeholder="Enter ID">
+        </div>
+        <div id="districtNameContainer">
+            <p><strong>District Name:</strong> <span id="districtNameDisplay">Loading...</span></p>
+        </div>
+        <div class="button-group">
+            <button id="navigateToPage" disabled>Go to SFTP Page</button>
+            <button id="navigateToInfo" disabled>Go to Info Page</button>
+        </div>
+        <div>
+            <label for="sftpUrl">SFTP URL:</label>
+            <input type="text" id="sftpUrl" readonly>
+        
+            <label for="sftpUsername">SFTP Username:</label>
+            <input type="text" id="sftpUsername" readonly>
+        
+            <label for="sftpPassword">SFTP Password:</label>
+            <input type="password" id="sftpPassword" readonly>
+            <br></br>
+            <button id="collectSFTPInfo">Collect SFTP Information</button>
+        </div>
+        <br></br>
+        <button id="refreshSFTP" class="full-width" style="display: none;">Refresh SFTP</button>
+        <br></br>
+        <button id="closeWindow" class="full-width">Close</button>
+    </div>
+
+    <script src="window.js"></script>
+</body>
+</html>
+
